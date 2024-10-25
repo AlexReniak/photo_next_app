@@ -1,8 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa6';
+import GalleryCarousel from './GalleryCarousel';
+import imageArray from '../../image-carousel.js';
 
 const Gallery = () => {
   const width = window.innerWidth * 0.8;
@@ -12,13 +13,8 @@ const Gallery = () => {
     <section className='container my-12 mx-auto'>
       <h2 className='text-3xl my-8 text-center'>Gallery</h2>
       <div className='flex flex-col justify-content'>
-        <div className='mx-auto'>
-          <Image
-            src={'/images/mountain-image.jpg'}
-            width={width}
-            height={height}
-            alt={'mountain overlooking lake in forest'}
-          />
+        <div className='mx-auto relative'>
+          <GalleryCarousel slides={imageArray} options={{}} />
         </div>
         <div className='mt-4 ml-24'>
           <p className='text-xl inline'>Browse the entire catalog</p>
