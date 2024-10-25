@@ -14,6 +14,9 @@ module.exports = {
       backgroundImage: {
         'hero-image': "url('../public/images/mountain-image.jpg')",
       },
+      boxShadow: {
+        light: 'rgba(16, 185, 129, 0.3) 0px 18px 36px -30px',
+      },
     },
   },
   plugins: [],

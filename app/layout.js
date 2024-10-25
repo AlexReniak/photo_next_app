@@ -1,8 +1,9 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Photoes by JR',
-  description: 'Photo Portfolio',
+  title: 'JR Photography | Professional Photographer',
+  description:
+    'Professional photographer who loves taking pictures that capture memories forever',
 };
 
 export default function RootLayout({ children }) {
