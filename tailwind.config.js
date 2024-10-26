@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class'],
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,12 +13,11 @@ module.exports = {
         foreground: 'var(--foreground)',
       },
       backgroundImage: {
-        'hero-image': "url('../public/images/mountain-image.jpg')",
+        'hero-image': 'url("../public/images/mountain-image.jpg")',
       },
       boxShadow: {
         light: 'rgba(16, 185, 129, 0.3) 0px 18px 36px -30px',
       },
     },
   },
-  plugins: [],
 };

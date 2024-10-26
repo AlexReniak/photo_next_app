@@ -3,14 +3,14 @@
   --detail-medium-contrast: rgb(234, 234, 234);
   --text-high-contrast-rgb-value: 49, 49, 49;
   --text-body: rgb(54, 49, 61);
+  --slide-height: 48rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
 }
 
 .embla {
   max-width: 80%;
   margin: auto;
-  --slide-height: 48rem;
-  --slide-spacing: 1rem;
-  --slide-size: 100%;
 }
 .embla__viewport {
   overflow: hidden;
@@ -34,7 +34,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: var(--slide-height);
   user-select: none;
 }
 .embla__controls {
@@ -74,6 +73,7 @@
 }
 .embla__button:disabled {
   color: var(--text-body);
+  box-shadow: inset 0 0 0 0.2rem var(--text-body);
 }
 .embla__button__svg {
   width: 35%;

@@ -17,14 +17,16 @@ const Navigation = () => {
 
   const handleScroll = () => {
     if (window.scrollY > height - 103) {
-      document.querySelector('nav').classList.add('shadow-light');
+      document.querySelector('nav').classList.add('border-emerald-500');
+      document.querySelector('nav').classList.remove('border-transparent');
     } else {
-      document.querySelector('nav').classList.remove('shadow-light');
+      document.querySelector('nav').classList.remove('border-emerald-500');
+      document.querySelector('nav').classList.add('border-transparent');
     }
   };
 
   return (
-    <nav className='bg-zinc-950 fixed top-0 z-10 inset-x-0'>
+    <nav className='bg-zinc-950 fixed top-0 z-10 inset-x-0 border-b-2 border-transparent transition-all duration-500'>
       <div className='container mx-auto flex justify-between content-center py-4'>
         <div className='justify-items-start content-center'>
           <a
