@@ -6,7 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 import imageArray from '../../image-carousel.js';
 
-const ArchiveCarousel = () => {
+const Carousel = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [mainViewportRef, embla] = useEmblaCarousel({ skipSnaps: false });
   const [thumbViewportRef, emblaThumbs] = useEmblaCarousel({
@@ -92,4 +92,4 @@ const ArchiveCarousel = () => {
   );
 };
 
-export default ArchiveCarousel;
+export default Carousel;

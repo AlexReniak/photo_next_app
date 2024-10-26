@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa6';
-import GalleryCarousel from './GalleryCarousel';
-import imageArray from '../../image-carousel.js';
 import Carousel from './Carousel';
 
 const Gallery = () => {
@@ -10,7 +8,6 @@ const Gallery = () => {
       <h2 className='text-3xl my-8 text-center'>Gallery</h2>
       <div className='flex flex-col justify-content'>
         <div className='mx-auto relative'>
-          {/* <GalleryCarousel slides={imageArray} options={{}} /> */}
           <Carousel />
         </div>
         <div className='mt-4 ml-24'>
