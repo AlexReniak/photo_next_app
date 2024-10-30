@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -69,12 +70,9 @@ const Contact = () => {
               Message
             </label>
           </div>
-          <button
-            type='submit'
-            className='w-full bg-emerald-500 text-white text-lg py-2 px-4 rounded-md hover:bg-emerald-600 transition-scale duration-300'
-          >
+          <Button variant='green' size='lg' type='submit'>
             Send
-          </button>
+          </Button>
         </form>
       </div>
     </section>

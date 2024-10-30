@@ -26,7 +26,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className='bg-zinc-950 fixed top-0 z-10 inset-x-0 border-b-2 border-transparent transition-all duration-500'>
+    <nav className='bg-darkTwo fixed top-0 z-10 inset-x-0 border-b-2 border-transparent transition-all duration-500'>
       <div className='container mx-auto flex justify-between content-center py-4'>
         <div className='justify-items-start content-center'>
           <a
