@@ -35,7 +35,7 @@ const Carousel = () => {
   }, [embla, onSelect]);
 
   return (
-    <div className='w-4/5 mx-auto px-4 py-8'>
+    <div className='w-[90%] mx-auto px-4 py-8'>
       <div className='relative'>
         <div className='overflow-hidden' ref={mainViewportRef}>
           <div className='flex'>
@@ -44,8 +44,8 @@ const Carousel = () => {
                 <Image
                   src={image.src}
                   alt={`Slide ${index + 1}`}
-                  width={600}
-                  height={400}
+                  width={1920}
+                  height={1280}
                   className='w-full object-cover aspect-[3/2]'
                 />
               </div>
@@ -79,8 +79,8 @@ const Carousel = () => {
                 <Image
                   src={image.src}
                   alt={`Thumbnail ${index + 1}`}
-                  width={120}
-                  height={80}
+                  width={1920}
+                  height={1280}
                   className='w-full object-cover aspect-[3/2]'
                 />
               </button>

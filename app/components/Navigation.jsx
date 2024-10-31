@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect } from 'react';
 
 const Navigation = () => {
@@ -29,32 +30,32 @@ const Navigation = () => {
     <nav className='bg-darkTwo fixed top-0 z-10 inset-x-0 border-b-2 border-transparent transition-all duration-500'>
       <div className='container mx-auto flex justify-between content-center py-4'>
         <div className='justify-items-start content-center'>
-          <a
+          <Link
             className='text-4xl transition duration-500 hover:text-emerald-500'
             href='/'
           >
             JR
-          </a>
+          </Link>
         </div>
         <div className='p-4 hidden md:flex flex-row justify-between'>
-          <a
-            href='#home'
+          <Link
+            href='/'
             className='mx-4 text-xl border-b-2 border-transparent hover:border-b-2 hover:border-emerald-500 transition duration-500'
           >
             Home
-          </a>
-          <a
-            href='#about'
+          </Link>
+          <Link
+            href='/archive'
             className='mx-4 text-xl border-b-2 border-transparent hover:border-b-2 hover:border-emerald-500 transition duration-500'
           >
-            About
-          </a>
-          <a
-            href='#contact'
+            Archive
+          </Link>
+          <Link
+            href='/contact'
             className='mx-4 text-xl border-b-2 border-transparent hover:border-b-2 hover:border-emerald-500 transition duration-500'
           >
-            Contact Us
-          </a>
+            Contact
+          </Link>
         </div>
       </div>
     </nav>

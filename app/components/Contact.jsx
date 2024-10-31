@@ -11,6 +11,9 @@ const Contact = () => {
   return (
     <section className='container my-12 mx-auto'>
       <h2 className='text-3xl my-8 text-center'>Let's get in touch</h2>
+      <p className='text-xl my-8 text-center'>
+        Questions, comments, or concerns? Send me a message!
+      </p>
       <div className='max-w-lg mx-auto p-6 bg-zinc-900 rounded-lg shadow-xl'>
         <form className='space-y-6'>
           <div className='relative'>

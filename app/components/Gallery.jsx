@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const Gallery = () => {
   return (
-    <section className='container my-12 mx-auto'>
+    <section className='container my-20 mx-auto'>
       <h2 className='text-3xl my-8 text-center'>Gallery</h2>
       <div className='flex flex-col justify-content'>
         <div className='mx-auto relative'>
