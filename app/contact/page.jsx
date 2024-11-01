@@ -2,7 +2,7 @@ import Contact from '../components/Contact';
 
 const ContactPage = () => {
   return (
-    <div className='container mx-auto mt-48 contact_page'>
+    <div className='container mx-auto contact_page'>
       <Contact />
     </div>
   );

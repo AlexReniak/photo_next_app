@@ -74,7 +74,7 @@ export default function ArchivePage() {
 
   return (
     <>
-      <div className='flex flex-col mt-[93px]'>
+      <div className='flex flex-col archive_page'>
         <div className='flex xl:hidden relative text-left'>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -89,11 +89,11 @@ export default function ArchivePage() {
                 <ChevronDown className='h-4 w-4 opacity-50' />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className='w-full bg-zinc-950 border border-emerald-500'>
+            <DropdownMenuContent className='w-full bg-zinc-900'>
               {categories.map((category) => (
                 <DropdownMenuItem
                   key={category.name}
-                  className='w-full bg-zinc-950 text-white hover:bg-emerald-500 justify-center'
+                  className='w-full bg-zinc-900 text-white hover:bg-emerald-500 justify-center'
                   onSelect={() => setSelectedCategory(category)}
                 >
                   {category.name}
@@ -127,7 +127,7 @@ export default function ArchivePage() {
             <div className='flex justify-between'>
               <h1 className='text-3xl font-bold mb-4'>Archive</h1>
               <Link href='/'>
-                <Button variant='green' size='lg'>
+                <Button variant='green' size='sm'>
                   <FaArrowLeft className='inline' /> Go Home
                 </Button>
               </Link>

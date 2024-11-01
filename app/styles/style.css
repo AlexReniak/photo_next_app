@@ -1,6 +1,13 @@
 .contact_page {
   min-height: 70vh;
-  min-height: -webkit-calc(100vh - 285px);
-  min-height: -moz-calc(100vh - 285px);
-  min-height: calc(100vh - 285px);
+  min-height: -webkit-calc(100vh - 237px);
+  min-height: -moz-calc(100vh - 237px);
+  min-height: calc(100vh - 237px);
+}
+
+.archive_page {
+  min-height: 70vh;
+  min-height: -webkit-calc(100vh - 188px);
+  min-height: -moz-calc(100vh - 188px);
+  min-height: calc(100vh - 188px);
 }
